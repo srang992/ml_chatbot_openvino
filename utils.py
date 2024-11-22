@@ -1,0 +1,10 @@
+USER = "user"
+ASSISTANT = "ai"
+MESSAGES = "messages"
+model_kwargs = {"device": "CPU"}
+encode_kwargs = {"normalize_embeddings": True}
+gen_config = {"skip_prompt": True, "pipeline_kwargs": {"max_new_tokens": 512}}
+ov_config = {"PERFORMANCE_HINT": "LATENCY", "NUM_STREAMS": "1", "CACHE_DIR": ""}
+chat_model_dir = "srang992/Qwen-2.5-3B-Instruct-ov-INT4"
+embed_model_dir = "srang992/all-mpnet-base-v2-ov"
+reranker_model_dir = "llmware/jina-reranker-v1-turbo-en-ov"

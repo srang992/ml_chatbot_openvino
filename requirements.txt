@@ -1,0 +1,6 @@
+langchain_community
+langchain_huggingface
+faiss-cpu
+optimum[openvino]
+streamlit
+onnx==1.16.1
